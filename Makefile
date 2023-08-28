@@ -30,7 +30,7 @@ VASM_VERSION := 1.9 1.9a 1.9c 1.9d
 VASM_CPU     := 6502 6800 6809 arm c16x jagrisc m68k pdp11 ppc qnice test tr3200 vidcore x86 z80
 VASM_SYNTAX  := std madmac mot oldstyle test
 
-.PHONY: clean unpack build
+.PHONY: clean
 
 all: $(patsubst %,vasm-%,$(VASM_VERSION))
 	
